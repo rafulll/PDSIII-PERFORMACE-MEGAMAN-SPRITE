@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .run1{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+        background-position-x: -10px;
+          background-position-y: 0px;
+      }
+      .run2{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -558px;
+          background-position-y: 0px;
+      }
+      .run3{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -1080px;
+          background-position-y: 0px;
+    }
+    .run4{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -1600px;
+          background-position-y: 0px;
+    }
+    .run5{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -2207px;
+          background-position-y: 0px;
+    }
+    .run6{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+        background-position-x: 4px;
+          background-position-y: 570px;
+      }
+      .run7{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -558px;
+          background-position-y: 570px;
+      }
+      .run8{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -1080px;
+          background-position-y: 570px;
+    }
+    .run9{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -1600px;
+          background-position-y: 570px;
+    }
+    .run10{
+          background-image: url(mega.png);
+          float: left;
+          width: 715px;
+          height: 572px;
+          margin: 5px;
+          background-position-x: -2207px;
+          background-position-y: 570px;
+    }
+    </style>
+</head>
+<body>
+    <span id="megaman" class="run1"></span>
+  
+<button onclick="correr()"> Correr</button>
+<script>
+        var _class = "run"
+        var bonecoComponente = document.getElementById("megaman")
+        async function correr() {
+            for (var index2 = 0; index2 < 10; index2++) {
+                for (var index = 1; index <= 10; index++) {
+                    await sleep(100)
+                    bonecoComponente.setAttribute("class", "run" + index);
+                }
+            }
+
+        }
+
+        function sleep(milliseconds) {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+        }
+</script>
+</body>
+</html>
